@@ -1,12 +1,14 @@
 {
 	"name": "react-tailwindcss-portfolio",
 	"version": "0.1.0",
+    "homepage": "https://akshat30.github.io/personal-website",
 	"private": true,
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^13.4.0",
 		"@testing-library/user-event": "^14.4.3",
 		"framer-motion": "4.1.17",
+		"gh-pages": "^6.0.0",
 		"postcss-cli": "^10.1.0",
 		"react": "^18.1.0",
 		"react-countup": "^6.1.1",
@@ -19,8 +21,10 @@
 		"web-vitals": "^1.0.1"
 	},
 	"scripts": {
+        "predeploy": "yarn run build",
+        "deploy": "gh-pages -d build",
 		"start": "react-scripts --openssl-legacy-provider start",
-		"build": "yarn run react-scripts build",
+		"build": "react-scripts --openssl-legacy-provider build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"build:css": "postcss src/css/tailwind.css -o src/css/main.css"
