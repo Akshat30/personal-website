@@ -26,7 +26,7 @@ const AppBanner = () => {
             duration: 0.9,
             delay: 0.1,
           }}
-          className="font-general-semibold text-4xl lg:text-3xl xl:text-4xl text-center sm:text-center text-ternary-dark dark:text-primary-light"
+          className="font-josefin-bold text-3xl sm:text-5xl text-center sm:text-center text-ternary-dark dark:text-primary-light"
         >
           <Typewriter
             options={{
@@ -50,7 +50,7 @@ const AppBanner = () => {
             duration: 0.9,
             delay: 0.2,
           }}
-          className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-center leading-normal text-gray-500 dark:text-gray-200"
+          className="font-josefin-light mt-8 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-center leading-normal text-gray-500 dark:text-gray-200"
         >
           akshat jain | code aficionado
         </motion.p>
@@ -63,7 +63,7 @@ const AppBanner = () => {
             duration: 0.9,
             delay: 0.2,
           }}
-          className="font-general-small mt-8 text-lg md:text-xl lg:text-xl xl:text-2xl text-left sm:text-center leading-normal text-gray-500 dark:text-gray-200"
+          className="font-general-regular mt-8 text-lg md:text-xl lg:text-xl xl:text-2xl text-left sm:text-center leading-normal text-gray-500 dark:text-gray-200"
         >
           <li>
             20 year old <span className="font-semibold">software engineer</span>{" "}
