@@ -513,6 +513,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-20 {
   margin-bottom: 5rem;
 }
+.mb-28 {
+  margin-bottom: 7rem;
+}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -608,6 +611,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-40 {
   width: 10rem;
+}
+.w-12 {
+  width: 3rem;
 }
 .w-5 {
   width: 1.25rem;
