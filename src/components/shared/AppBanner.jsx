@@ -1,11 +1,12 @@
 import useThemeSwitcher from "../../hooks/useThemeSwitcher";
 import { FiArrowDownCircle } from "react-icons/fi";
-import developerLight from "../../images/developer.svg";
-import developerDark from "../../images/developer-dark.svg";
-import monitor from "../../images/monitor.png";
-import front from "../../images/front.eps";
+import ucsd from "../../images/ucsd.png";
+import geisel from "../../images/geisel.jpeg";
+import ggb from "../../images/goldengatebridge.jpg";
 import { motion } from "framer-motion";
+import glean from "../../images/glean.jpeg";
 import Typewriter from "typewriter-effect";
+import InfoCard from "../reusable/InfoCard";
 
 const AppBanner = () => {
   const [activeTheme] = useThemeSwitcher();
@@ -26,21 +27,9 @@ const AppBanner = () => {
             duration: 0.9,
             delay: 0.1,
           }}
-          className="font-josefin-bold text-3xl sm:text-5xl text-center sm:text-center text-ternary-dark dark:text-primary-light"
+          className="font-josefin-bold mt-2 text-3xl sm:text-5xl text-center sm:text-center text-ternary-dark dark:text-primary-light"
         >
-          <Typewriter
-            options={{
-              loop: true,
-            }}
-            onInit={(typewriter) => {
-              typewriter
-                .typeString("hello world, i'm aj!")
-                .pauseFor(2000)
-                .deleteAll()
-                .pauseFor(1000)
-                .start();
-            }}
-          />
+          hello world, i'm aj!
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
@@ -65,16 +54,45 @@ const AppBanner = () => {
           }}
           className="font-general-regular mt-8 text-lg md:text-xl lg:text-xl xl:text-2xl text-left sm:text-center leading-normal text-gray-500 dark:text-gray-200"
         >
-          <li>
-            20 year old <span className="font-semibold">software engineer</span>{" "}
-            from the silicon valley, ca
-          </li>
-          <li>
-            computer science at university of california, san diego
-          </li>
-          <li>
-              software engineering, web development, video game development
-          </li>
+          <div className="flex flex-row grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
+            <InfoCard
+              title={""}
+              body={
+                <div>
+                  <div className="font-general-bold">software engineer</div>
+                  <div className="mt-2 text-sm">bay area, ca</div>
+                </div>
+              }
+              image={ggb}
+              link={"/"}
+            />
+            <InfoCard
+              title={""}
+              body={
+                <div>
+                  <div className="font-general-bold">computer science</div>
+                  <div className="mt-2 text-sm">
+                    university of california, san diego
+                  </div>
+                </div>
+              }
+              image={geisel}
+              link={"/"}
+            />
+            <InfoCard
+              title={""}
+              body={
+                <div>
+                  <div className="font-general-bold">sw project intern</div>
+                  <div className="mt-2 text-sm">
+                    glean
+                  </div>
+                </div>
+              }
+              image={glean}
+              link={"/"}
+            />
+          </div>
         </motion.p>
 
         <motion.div

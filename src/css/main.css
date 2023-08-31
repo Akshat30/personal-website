@@ -457,6 +457,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 .fixed {
   position: fixed;
 }
+.main-title {
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms infinite;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 710px;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: hsl(0, 0%, 80%);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
 .relative {
   position: relative;
 }
@@ -696,6 +716,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .rounded-t-xl {
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
+}
+.rounded-b-xl {
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
 }
 .border {
   border-width: 1px;
