@@ -27,7 +27,7 @@ const AppBanner = () => {
             duration: 0.9,
             delay: 0.1,
           }}
-          className="font-josefin-bold mt-2 text-3xl sm:text-5xl text-center sm:text-center text-ternary-dark dark:text-primary-light"
+          className="font-general-bold mt-2 text-3xl sm:text-5xl text-center sm:text-center text-ternary-dark dark:text-primary-light"
         >
           hello world, i'm aj!
         </motion.h1>
@@ -39,7 +39,7 @@ const AppBanner = () => {
             duration: 0.9,
             delay: 0.2,
           }}
-          className="font-josefin-light mt-8 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-center leading-normal text-gray-500 dark:text-gray-200"
+          className="font-josefin-regular mt-8 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-center leading-normal text-gray-500 dark:text-gray-200"
         >
           akshat jain | code aficionado
         </motion.p>
@@ -113,7 +113,7 @@ const AppBanner = () => {
           >
             <FiArrowDownCircle className="mr-2 sm:mr-3 h-5 w-5 sn:w-6 sm:h-6 duration-100"></FiArrowDownCircle>
             <span className="text-sm sm:text-lg font-general-medium duration-100">
-              My Resume
+              my resume
             </span>
           </a>
         </motion.div>
