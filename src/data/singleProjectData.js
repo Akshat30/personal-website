@@ -1,162 +1,67 @@
 // Import images
-import Image1 from '../images/ui-project-1.jpg';
-import Image2 from '../images/web-project-2.jpg';
-import Image3 from '../images/mobile-project-2.jpg';
-import Image4 from '../images/mobile-project-1.jpg';
-import Image5 from '../images/web-project-1.jpg';
-import Image6 from '../images/ui-project-2.jpg';
-// Import icons
-import {
-	FiFacebook,
-	FiInstagram,
-	FiLinkedin,
-	FiTwitter,
-	FiYoutube,
-} from 'react-icons/fi';
+import verum1 from '../images/verum/verum1.jpg';
+import verum2 from "../images/verum/verum2.jpg";
+import verum3 from "../images/verum/verum3.jpg";
+import html from "../images/tools/html.png";
+import css from "../images/tools/css.png";
 
 export const singleProjectData = {
-	ProjectHeader: {
-		title: 'Project Management UI',
-		publishDate: 'Jul 26, 2021',
-		tags: 'UI / Frontend',
-	},
-	ProjectImages: [
-		{
-			id: 1,
-			title: 'Kabul Project Management UI',
-			img: Image1,
-		},
-		{
-			id: 2,
-			title: 'Kabul Project Management UI',
-			img: Image2,
-		},
-		{
-			id: 3,
-			title: 'Kabul Project Management UI',
-			img: Image3,
-		},
-	],
-	ProjectInfo: {
-		ClientHeading: 'About Client',
-		CompanyInfo: [
-			{
-				id: 1,
-				title: 'Name',
-				details: 'Company Ltd',
-			},
-			{
-				id: 2,
-				title: 'Services',
-				details: 'UI Design & Frontend Development',
-			},
-			{
-				id: 3,
-				title: 'Website',
-				details: 'https://company.com',
-			},
-			{
-				id: 4,
-				title: 'Phone',
-				details: '555 8888 888',
-			},
-		],
-		ObjectivesHeading: 'Objective',
-		ObjectivesDetails:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
-		Technologies: [
-			{
-				title: 'Tools & Technologies',
-				techs: [
-					'HTML',
-					'CSS',
-					'JavaScript',
-					'Vue.js',
-					'TailwindCSS',
-					'AdobeXD',
-				],
-			},
-		],
-		ProjectDetailsHeading: 'Challenge',
-		ProjectDetails: [
-			{
-				id: 1,
-				details:
-					'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
-			},
-			{
-				id: 2,
-				details:
-					'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-			},
-			{
-				id: 3,
-				details:
-					'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-			},
-			{
-				id: 4,
-				details:
-					'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
-			},
-		],
-		SocialSharingHeading: 'Share This',
-		SocialSharing: [
-			{
-				id: 1,
-				name: 'Twitter',
-				icon: <FiTwitter />,
-				url: 'https://twitter.com/realstoman',
-			},
-			{
-				id: 2,
-				name: 'Instagram',
-				icon: <FiInstagram />,
-				url: 'https://instagram.com/realstoman',
-			},
-			{
-				id: 3,
-				name: 'Facebook',
-				icon: <FiFacebook />,
-				url: 'https://facebook.com/',
-			},
-			{
-				id: 4,
-				name: 'LinkedIn',
-				icon: <FiLinkedin />,
-				url: 'https://linkedin.com/',
-			},
-			{
-				id: 5,
-				name: 'Youtube',
-				icon: <FiYoutube />,
-				url: 'https://www.youtube.com/c/StomanStudio',
-			},
-		],
-	},
-	RelatedProject: {
-		title: 'Related Projects',
-		Projects: [
-			{
-				id: 1,
-				title: 'Mobile UI',
-				img: Image4,
-			},
-			{
-				id: 2,
-				title: 'Web Application',
-				img: Image5,
-			},
-			{
-				id: 3,
-				title: 'UI Design',
-				img: Image6,
-			},
-			{
-				id: 4,
-				title: 'Kabul Mobile App UI',
-				img: Image3,
-			},
-		],
-	},
+  ProjectHeader: {
+    title: "Verum Political Analysis",
+    publishDate: "August 2023 - Present",
+    projectLink: "https://github.com/Akshat30/personal-website",
+    githubLink: "https://github.com/Akshat30/personal-website",
+  },
+  ProjectImages: [
+    {
+      id: 1,
+      title: "Kabul Project Management UI",
+      img: verum1,
+    },
+    {
+      id: 2,
+      title: "Kabul Project Management UI",
+      img: verum2,
+    },
+    {
+      id: 3,
+      title: "Kabul Project Management UI",
+      img: verum3,
+    },
+  ],
+  ProjectInfo: {
+    Description:
+      "In order to improve access to information, Verum provides users with friendly UX to receive an in-depth analysis of any political text/speech of their choosing.",
+    Context:
+      "Designed and developed for the All Inclusive Hackathon on DevPost.",
+    Technologies: [
+      {
+        title: "Tools & Technologies",
+        techs: [
+          html, css
+        ],
+      },
+    ],
+    Work: [
+      {
+        id: 1,
+        point:
+          "Designed and developed JavaScript backend to process text from a given link using HTML extraction and external API",
+      },
+      {
+        id: 2,
+        point:
+          "Created pathway to summarizing API for summarization of very long transcripts",
+      },
+      {
+        id: 3,
+        point:
+          "Formulated a thorough prompt for political analysis, sent to OpenAI using JS for GPT-3.5-Turbo",
+      },
+      {
+        id: 4,
+        point: "Connected backend to React front-end for development",
+      },
+    ],
+  },
 };

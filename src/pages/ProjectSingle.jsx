@@ -21,7 +21,6 @@ const ProjectSingle = () => {
 				<ProjectHeader />
 				<ProjectGallery />
 				<ProjectInfo />
-				<ProjectRelatedProjects />
 			</SingleProjectProvider>
 		</motion.div>
 	);
