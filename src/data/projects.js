@@ -6,7 +6,7 @@ import MobileImage2 from '../images/mobile-project-2.jpg';
 import UIImage1 from '../images/ui-project-1.jpg';
 import UIImage2 from '../images/ui-project-2.jpg';
 
-export const projectsData = [
+export const projectsTitles = [
 	{
 		id: 1,
 		title: 'Verum',

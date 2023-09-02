@@ -26,8 +26,8 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="projects" element={<Projects />} />
               <Route
-                path="projects/single-project"
-                element={<ProjectSingle />}
+                path="projects/:name"
+                element={<ProjectSingle />} // Remove the name prop here
               />
 
               <Route path="about" element={<About />} />

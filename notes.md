@@ -3,3 +3,6 @@ Image by <a href="https://www.freepik.com/free-vector/isometric-cms-concept_1178
 
 ucsd photo
 ggb photo
+credit icons
+https://www.svgrepo.com/show/306500/openai.svg
+Photo by Pixabay: https://www.pexels.com/photo/book-close-up-focus-glass-208452/

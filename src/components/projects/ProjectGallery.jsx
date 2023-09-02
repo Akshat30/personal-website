@@ -1,25 +1,23 @@
-import { useContext } from 'react';
-import SingleProjectContext from '../../context/SingleProjectContext';
+import { useContext } from "react";
+import SingleProjectContext from "../../context/SingleProjectContext";
 
-const ProjectGallery = () => {
-	const { singleProjectData } = useContext(SingleProjectContext);
+const ProjectGallery = ({data}) => {
+//   const { singleProjectData } = useContext(SingleProjectContext);
 
-	return (
-		<div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12">
-			{singleProjectData.ProjectImages.map((project) => {
-				return (
-					<div className="mb-10 sm:mb-0" key={project.id}>
-						<img
-							src={project.img}
-							className="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
-							alt={project.title}
-							key={project.id}
-						/>
-					</div>
-				);
-			})}
-		</div>
-	);
+  return (
+    <div className="mt-12">
+      <div className="mb-6 sm:mb-0" key={data.CoverImage.id}>
+        <a href={data.CoverImage.creditLink} target="_blank">
+          <img
+            src={data.CoverImage.src}
+            className="cover-img rounded-xl cursor-default shadow-lg sm:shadow-none"
+            alt={data.CoverImage.title}
+            key={data.CoverImage.id}
+          />
+        </a>
+      </div>
+    </div>
+  );
 };
 
 export default ProjectGallery;
