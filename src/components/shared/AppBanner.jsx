@@ -1,4 +1,3 @@
-import useThemeSwitcher from "../../hooks/useThemeSwitcher";
 import { FiArrowDownCircle } from "react-icons/fi";
 import ucsd from "../../images/ucsd.png";
 import geisel from "../../images/geisel.jpeg";
@@ -9,7 +8,6 @@ import Typewriter from "typewriter-effect";
 import InfoCard from "../reusable/InfoCard";
 
 const AppBanner = () => {
-  const [activeTheme] = useThemeSwitcher();
 
   return (
     <motion.section
