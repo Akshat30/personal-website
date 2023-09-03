@@ -15,8 +15,8 @@
 }
 
 iframe {
-    width: 100%;
-    height: 40rem;
+  width: 100%;
+  height: 40rem;
 }
 
 ::before,
@@ -92,7 +92,6 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
-
 
 /*
 Add the correct font weight in Edge and Safari.
@@ -232,10 +231,34 @@ Correct the cursor style of increment and decrement buttons in Safari.
   height: auto;
 }
 
-.psingle-img{
-    height: 10rem;
-    width: 100%;
-    object-fit: cover;
+.psingle-img {
+  height: 10rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.education-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.education-img-space {
+  width: 30%;
+  /* object-fit: cover; */
+}
+.education-desc-space {
+  width: 70%;
+  /* object-fit: cover; */
+}
+
+.courses-box {
+  padding: 4px;
+  /* object-fit: cover; */
+}
+
+.org-box {
+    padding: 10px;
+  /* object-fit: cover; */
 }
 
 /*
@@ -566,6 +589,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mr-4 {
   margin-right: 1rem;
 }
+.mr-8 {
+  margin-right: 2rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -804,6 +831,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(246 247 248 / var(--tw-bg-opacity));
 }
+.bg-less-light {
+  --tw-bg-opacity: 1;
+  background-color: #b9b9b97d;
+}
 .bg-indigo-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(238 242 255 / var(--tw-bg-opacity));
@@ -880,6 +911,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -937,6 +972,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
+.text-sm {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
 .font-bold {
   font-weight: 700;
 }
@@ -948,6 +987,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .uppercase {
   text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
 }
 .leading-loose {
   line-height: 2;
@@ -1339,6 +1382,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:w-1\/4 {
     width: 25%;
   }
+    .sm\:w-1\/5 {
+    width: 20%;
+  }
 
   .sm\:w-3\/4 {
     width: 75%;
@@ -1349,6 +1395,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 
   .sm\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .w-1\/2 {
+    width: 50%;
+  }
+
+  .w-2\/3 {
     width: 66.666667%;
   }
 
@@ -1555,6 +1613,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .text-highlight {
+    background-color: rgba(148, 148, 148, 0.4);
+  }
+
+  .dark .dark\:.text-highlight {
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .lg\:py-10 {

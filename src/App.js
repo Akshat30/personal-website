@@ -13,6 +13,7 @@ const Contact = lazy(() => import("./pages/Contact.jsx"));
 const Home = lazy(() => import("./pages/Home"));
 const Projects = lazy(() => import("./pages/Projects"));
 const ProjectSingle = lazy(() => import("./pages/ProjectSingle.jsx"));
+const Professional = lazy(() => import("./pages/Professional.jsx"));
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
               <Route
                 path="projects/:name"
                 element={<ProjectSingle />} // Remove the name prop here
+              />
+              <Route
+                path="professional" element={<Professional />}
               />
 
               <Route path="about" element={<About />} />

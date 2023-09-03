@@ -20,8 +20,8 @@ const ProjectsGrid = () => {
     <section className="py-5 sm:py-10 mt-5 sm:mt-10">
       <div className="text-center">
         <p
-          className="font-general-semibold text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light border-b border-primary-light
-                        dark:border-secondary-dark pb-3"
+          className="font-general-semibold text-2xl sm:text-4xl mb-4 text-ternary-dark dark:text-ternary-light border-b border-primary-light
+                        dark:border-secondary-dark pb-8"
         >
           projects portfolio
         </p>
