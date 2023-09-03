@@ -15,15 +15,6 @@ const Projects = lazy(() => import("./pages/Projects"));
 const ProjectSingle = lazy(() => import("./pages/ProjectSingle.jsx"));
 
 function App() {
-//   const storedTheme = localStorage.theme || "dark";
-
-//   // Initialize the theme state with the stored theme preference.
-//   const [theme, setTheme] = useState(storedTheme);
-
-//   // Update localStorage when the theme changes.
-//   useEffect(() => {
-//     localStorage.theme = theme;
-//   }, [theme]);
   return (
     <AnimatePresence>
       <div className=" bg-secondary-light dark:bg-primary-dark transition duration-300">
