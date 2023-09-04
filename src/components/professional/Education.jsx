@@ -73,7 +73,7 @@ const Education = () => {
             <div className="font-general-regular text-sm lowercase text-center text-ternary-dark dark:text-ternary-light mt-4 ml-8 mr-8 mb-4">
               <div className="grid sm:grid-cols-3 gap-3">
                 <div className="flex flex-row rounded-xl shadow-lg hover:shadow-xl cursor-pointer sm:mb-0 bg-primary-light dark:bg-primary-dark">
-                  <div className="sm:w-1/5">
+                  <div className="w-12">
                     <a
                       href="https://ucsd.edu/"
                       aria-label="Single Project"

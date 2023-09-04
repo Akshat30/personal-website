@@ -77,7 +77,7 @@ export const projectsData = [
     },
   },
   {
-    id: 2,
+    id: 3,
     Name: "netflix",
     Title: "netflix prize algorithm",
     ProjectSingle: {
