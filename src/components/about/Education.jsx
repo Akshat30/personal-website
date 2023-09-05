@@ -9,10 +9,8 @@ const Education = () => {
   return (
     <section className="container mx-auto py-5 sm:py-10 mt-5 sm:mt-10">
       <div className="text-center">
-        <p
-          className="font-general-semibold text-2xl sm:text-4xl mb-4 text-ternary-dark dark:text-ternary-light border-b border-primary-light
-                        dark:border-secondary-dark pb-8"
-        >
+        {/* border-b border-primary-light dark:border-secondary-dark pb-8 */}
+        <p className="font-general-semibold text-2xl sm:text-4xl mb-4 text-ternary-dark dark:text-ternary-light">
           education
         </p>
       </div>
@@ -25,7 +23,7 @@ const Education = () => {
           delay: 0.15,
         }}
       >
-        <div className="flex flex-row rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-ternary-light dark:bg-ternary-dark">
+        <div className="flex flex-col sm:flex-row rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-ternary-light dark:bg-ternary-dark">
           <div className="sm:w-1/4">
             <a
               href="https://ucsd.edu/"
@@ -40,19 +38,16 @@ const Education = () => {
             </a>
           </div>
           <div className="sm:w-3/4">
-            <div className="flex flex-row">
-              <p className="w-1/2 font-general-semibold  text-left text-lg sm:text-2xl text-ternary-dark dark:text-ternary-light mt-4 ml-8 mb-2">
-                university of california, san diego
-              </p>
-              <p className="w-1/2 font-general-semibold text-right text-lg sm:text-2xl text-ternary-dark dark:text-ternary-light mt-4 mr-8 mb-2">
-                b.s. computer science
-              </p>
+            <div className="font-general-semibold  text-left text-xl sm:text-2xl text-ternary-dark dark:text-ternary-light mt-4 ml-8 mb-2 ">
+              university of california, san diego
             </div>
-
-            <span className="font-general-italic  text-left text-md text-ternary-dark dark:text-ternary-light ml-8">
-              june '25
-            </span>
-            <div className="font-general-regular  text-left text-md text-ternary-dark dark:text-ternary-light mt-4 ml-8">
+            <div className="font-general-medium text-left text-md sm:text-lg text-ternary-dark dark:text-ternary-light ml-8 mb-2">
+              class of 2025
+            </div>
+            <div className="font-general-italic text-left text-md sm:text-lg text-ternary-dark dark:text-ternary-light ml-8 mb-10">
+              b.s. computer science
+            </div>
+            {/* <div className="font-general-regular  text-left text-md text-ternary-dark dark:text-ternary-light mt-4 ml-8">
               relevant courses:
             </div>
             <div className="font-general-regular text-sm lowercase text-center text-ternary-dark dark:text-ternary-light mt-4 ml-8 mr-8 mb-4">
@@ -104,8 +99,8 @@ const Education = () => {
                   </div>
                   <p className="sm:w-3/4 py-4"> Triton Consuling Group</p>
                 </div>
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
           </div>
           {/* <div className="grid grid-cols-5 gap-2 mt-2">
             {techs.map((tech, index) => (

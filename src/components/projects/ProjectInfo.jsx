@@ -31,35 +31,13 @@ const ProjectInfo = ({ data }) => {
             <p className="font-general-medium text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
               technologies
             </p>
-            <div className="grid grid-cols-5 gap-2 mt-2">
+            <div className="flex flex-wrap text-sm gap-2 mt-2">
               {data.ProjectInfo.Technologies.techs.map((tech, index) => (
-                <div className="text-center light-logo-container" key={index}>
-                  <img className="" src={techIcons[tech]} alt={tech} />
+                <div className="flex-wrap text-center light-tech-container dark:dark-tech-container" key={index}>
+                  {tech}
                 </div>
               ))}
             </div>
-
-            <p className="font-general-light text-sm text-primary-dark dark:text-ternary-light mt-4">
-              {data.ProjectInfo.Technologies.techs.map((tech, index) => (
-                <span key={index}>
-                  {tech}
-                  {index !== data.ProjectInfo.Technologies.techs.length - 1 &&
-                    ", "}
-                </span>
-              ))}
-            </p>
-            <p className="font-general-medium text-2xl font-semibold text-ternary-dark dark:text-ternary-light mt-4 mb-2">
-              additional
-            </p>
-            <p className="font-general-light text-sm text-primary-dark dark:text-ternary-light mt-2">
-              {data.ProjectInfo.Technologies.additional.map((add, index) => (
-                <span key={index}>
-                  {add}
-                  {index !==
-                    data.ProjectInfo.Technologies.additional.length - 1 && ", "}
-                </span>
-              ))}
-            </p>
           </div>
 
           {/* Single project social sharing */}

@@ -30,8 +30,7 @@ export const projectsData = [
       Context:
         "Designed and developed for the All Inclusive Hackathon on DevPost.",
       Technologies: {
-        techs: ["html", "css", "react"],
-        additional: ["rapid api, gpt-3.5-turbo"],
+        techs: ["html", "css", "react", "rapid api", "gpt-3.5-turbo"],
       },
       Work: [
         "Designed and developed JavaScript backend to process text from a given link using HTML extraction and external API",

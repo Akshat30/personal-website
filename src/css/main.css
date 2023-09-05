@@ -24,7 +24,7 @@ iframe {
   --tw-content: "";
 }
 
-.activeLink{
+.activeLink {
   color: #ff6600; /* Your active link color */
   /* Other active link styles */
 }
@@ -247,6 +247,16 @@ Correct the cursor style of increment and decrement buttons in Safari.
   object-fit: cover;
 }
 
+.work {
+  align-items: center;
+  justify-content: center;
+}
+.work-img-small {
+  width: 20%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .education-img-space {
   width: 30%;
   /* object-fit: cover; */
@@ -262,7 +272,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 }
 
 .org-box {
-    padding: 10px;
+  padding: 10px;
   /* object-fit: cover; */
 }
 
@@ -388,7 +398,6 @@ audio,
 iframe,
 embed,
 object {
-  display: block; /* 1 */
   vertical-align: middle; /* 2 */
 }
 
@@ -610,6 +619,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .ml-2 {
   margin-left: 0.5rem;
 }
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.lg\:ml-2 {
+  margin-left: 0.5rem;
+}
+.lg\:ml-0 {
+  margin-left: 0rem;
+}
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -730,6 +749,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .flex-col-reverse {
   flex-direction: column-reverse;
 }
+  .flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
 .items-center {
   align-items: center;
 }
@@ -977,10 +1000,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-.text-sm {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1141,9 +1161,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 10px; /* Rounded corners */
   padding: 5px; /* Adjust padding as needed for spacing */
   text-align: center; /* Center the logos horizontally */
-  border: 2px solid #ccc; /* Add a 2px solid border with a light gray color */
+  border: 2px solid #033561; /* Add a 2px solid border with a light gray color */
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
+
+.dark .dark\:dark-tech-container {
+  background-color: #004d6e; /* Slightly darker background color */
+  color: #97c1e5;
+  border-radius: 20px; /* Rounded corners */
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center; /* Center the logos horizontally */
+}
+
+.light-tech-container {
+  background-color: #dce4ea; /* Slightly darker background color */
+  color: #004d6e;
+  border-radius: 20px; /* Rounded corners */
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center; /* Center the logos horizontally */
+}
+
 .text-indigo-600 {
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
@@ -1319,6 +1362,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: auto;
   }
 
+  .sm\:work-img {
+    width: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
   .sm\:mx-4 {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -1363,6 +1412,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:ml-4 {
     margin-left: 1rem;
   }
+  .sm\:ml-0 {
+    margin-left: 0rem;
+  }
 
   .sm\:mt-3 {
     margin-top: 0.75rem;
@@ -1387,8 +1439,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:w-1\/4 {
     width: 25%;
   }
-    .sm\:w-1\/5 {
+  .sm\:w-1\/5 {
     width: 20%;
+  }
+
+  .sm\:w-4\/5 {
+    width: 80%;
   }
 
   .sm\:w-3\/4 {
@@ -1554,6 +1610,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+  .sm\:text-md {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .sm\:text-2xl {
