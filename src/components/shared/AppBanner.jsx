@@ -81,7 +81,7 @@ const AppBanner = () => {
               title={""}
               body={
                 <div>
-                  <div className="font-general-bold">sw project intern</div>
+                  <div className="font-general-bold">swe intern</div>
                   <div className="mt-2 text-sm">
                     glean
                   </div>
