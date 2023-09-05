@@ -14,7 +14,7 @@ const ProjectSingle = ({ name, title, category, image, techs }) => {
       }}
     >
       <Link to={"/projects/" + name} aria-label="Single Project">
-        <div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
+        <div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark of-auto">
           <div>
             <img
               src={image}
@@ -30,13 +30,17 @@ const ProjectSingle = ({ name, title, category, image, techs }) => {
               {category}
             </span>
           </div>
-          {/* <div className="grid grid-cols-5 gap-2 mt-2">
+          <div className="flex-wrap text-sm gap-2 mt-2 work ml-4 mr-4 ">
             {techs.map((tech, index) => (
-              <div className="text-center light-logo-container" key={index}>
-                <img className="" src={techIcons[tech]} alt={tech} />
+              <div
+                className="flex-wrap text-center light-tech-container dark:dark-tech-container mb-2"
+                key={index}
+              >
+                {tech}
               </div>
             ))}
-          </div> */}
+          </div>
+          <div className="mb-4"></div>
         </div>
       </Link>
     </motion.div>

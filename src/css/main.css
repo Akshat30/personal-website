@@ -251,6 +251,13 @@ Correct the cursor style of increment and decrement buttons in Safari.
   align-items: center;
   justify-content: center;
 }
+
+.center-item {
+      display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .work-img-small {
   width: 20%;
   border-radius: 50%;
@@ -469,6 +476,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
   padding-right: 1rem;
   padding-left: 1rem;
+}
+.of-auto {
+  overflow: auto;
 }
 @media (min-width: 640px) {
   .container {
@@ -749,10 +759,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .flex-col-reverse {
   flex-direction: column-reverse;
 }
-  .flex-wrap {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
 .items-center {
   align-items: center;
 }
