@@ -39,7 +39,7 @@ const AppBanner = () => {
           }}
           className="font-josefin-regular mt-8 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-center leading-normal text-gray-500 dark:text-gray-200"
         >
-          akshat jain | code aficionado
+          &#123;akshat jain&#125;
         </motion.p>
 
         <motion.p
@@ -50,7 +50,7 @@ const AppBanner = () => {
             duration: 0.9,
             delay: 0.2,
           }}
-          className="font-general-regular mt-8 text-lg md:text-xl lg:text-xl xl:text-2xl text-left sm:text-center leading-normal text-gray-500 dark:text-gray-200"
+          className="font-general-regular mt-10 text-lg md:text-xl lg:text-xl xl:text-2xl text-left sm:text-center leading-normal text-gray-500 dark:text-gray-200"
         >
           <div className="flex flex-row grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
             <InfoCard
@@ -82,9 +82,7 @@ const AppBanner = () => {
               body={
                 <div>
                   <div className="font-general-bold">swe intern</div>
-                  <div className="mt-2 text-sm">
-                    glean
-                  </div>
+                  <div className="mt-2 text-sm">glean</div>
                 </div>
               }
               image={glean}
