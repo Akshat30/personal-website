@@ -187,7 +187,7 @@ export const projectsData = [
       Context:
         "First Place. Designed and developed for the Netflix Prize Algorithm contest in AP Computer Science course.",
       Technologies: {
-        techs: ["java", "github", "csv"],
+        techs: ["java", "javadocs", "csv"],
         additional: [],
       },
       Work: [
@@ -291,7 +291,7 @@ export const projectsData = [
         "bay4j is a youth organization promoting justice for important social issues, and this website helped them form an online presence",
       Context: "Designed and developed as a website for Bay4j",
       Technologies: {
-        techs: ["javascript", "canva", "github", "html", "css", "github pages"],
+        techs: ["javascript", "canva", "gh pages", "html", "css", "github pages"],
         additional: [],
       },
       Work: [
