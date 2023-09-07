@@ -1,12 +1,12 @@
 // Import images
 import glean from "../images/gleansquare.jpeg";
 import soflo from "../images/soflo.png";
-import scio from "../images/SCIO.png"
+import scio from "../images/SCIO.png";
 
 export const workData = [
   {
     id: 1,
-    Title: "software engineering intern",
+    Title: "software engineer intern",
     Logo: glean,
     Time: "jul 23 - present",
     Description: [
@@ -30,13 +30,19 @@ export const workData = [
   },
   {
     id: 3,
-    Title: "software engineering intern",
+    Title: "software engineer intern",
     Logo: scio,
     Time: "jun 19 - jul 19",
     Description: [
       "Wrote 15+ JUnit tests to run on Java methods of Chrome extension, making sure to validate every practical aspect",
       "Debugged with JUnit tests by running on functions, adjusting them, reporting failed tests, reducing error by 10-15%",
     ],
-    Technologies: ["java", "junit", "intellij", "chrome extensions", "unit testing"],
+    Technologies: [
+      "java",
+      "junit",
+      "intellij",
+      "chrome extensions",
+      "unit testing",
+    ],
   },
 ];
