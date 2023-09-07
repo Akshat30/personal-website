@@ -969,6 +969,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pt-10 {
   padding-top: 2.5rem;
 }
+.bg-light-gray{
+    background-color: #ececec;
+}
 .pb-3 {
   padding-bottom: 0.75rem;
 }
