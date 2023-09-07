@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { techIcons } from "../../images/tools/techIcons.js";
+import { FiGithub } from "react-icons/fi";
 
 const ProjectSingle = ({ name, title, category, image, techs }) => {
   return (
@@ -14,7 +15,7 @@ const ProjectSingle = ({ name, title, category, image, techs }) => {
       }}
     >
       <Link to={"/projects/" + name} aria-label="Single Project">
-        <div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark of-auto">
+        <div className="rounded-xl shadow-lg p-1 hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-psingle dark:bg-ternary-dark of-auto hover:scale">
           <div>
             <img
               src={image}
@@ -30,16 +31,26 @@ const ProjectSingle = ({ name, title, category, image, techs }) => {
               {category}
             </span>
           </div>
-          <div className="flex-wrap text-sm gap-2 mt-2 work ml-4 mr-4 ">
-            {techs.map((tech, index) => (
-              <div
-                className="flex-wrap text-center light-tech-container dark:dark-tech-container mb-2"
-                key={index}
-              >
-                {tech}
-              </div>
-            ))}
+          <div className="">
+            {/* <a
+              href={"https://bruh.com"}
+              target="__blank"
+              className="text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 p-4 duration-300"
+            >
+              <i className="text-xl sm:text-2xl md:text-3xl"><FiGithub/></i>
+            </a> */}
+            <div className="flex-wrap text-sm gap-2 mt-2 work ml-4 mr-4">
+              {techs.slice(0, 4).map((tech, index) => (
+                <div
+                  className="flex-wrap text-center light-tech-container dark:dark-tech-container mb-0"
+                  key={index}
+                >
+                  {tech}
+                </div>
+              ))}
+            </div>
           </div>
+
           <div className="mb-4"></div>
         </div>
       </Link>

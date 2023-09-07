@@ -13,7 +13,7 @@ const ProfessionalCard = ({date, img, name, description, techs}) => {
         delay: 0.15,
       }}
     >
-      <div className="flex flex-col sm:flex-row rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 bg-ternary-light dark:bg-ternary-dark">
+      <div className="flex flex-col sm:flex-row rounded-xl shadow-lg hover:shadow-xl cursor-default mb-10 bg-ternary-light dark:bg-ternary-dark">
         <div className="sm:w-1/4">
           <div className="flex h-full">
             <div className="flex w-full work mt-6 sm:mt-0">

@@ -2,8 +2,8 @@ import { useContext } from "react";
 import { FiClock, FiLink, FiGithub } from "react-icons/fi";
 import SingleProjectContext from "../../context/SingleProjectContext";
 
-const ProjectSingleHeader = ({data}) => {
-//   const { singleProjectData } = useContext(SingleProjectContext);
+const ProjectSingleHeader = ({ data }) => {
+  //   const { singleProjectData } = useContext(SingleProjectContext);
 
   return (
     <div>
@@ -17,26 +17,33 @@ const ProjectSingleHeader = ({data}) => {
             {data.ProjectHeader.publishDate}
           </span>
         </div>
-        <div className="flex items-center mr-10 mt-4 sm:mt-0">
-          <FiLink className="text-lg text-indigo-600 dark:text-indigo-400" />
-          <a
-            className="font-general-regular ml-2 leading-none hover:underline text-indigo-600 dark:text-indigo-400 duration-300"
-            href={data.ProjectHeader.projectLink}
-            target="_blank"
-          >
-            project link
-          </a>
-        </div>
-        <div className="flex items-center mt-4 sm:mt-0">
-          <FiGithub className="text-lg text-indigo-600 dark:text-indigo-400" />
-          <a
-            className="font-general-regular ml-2 leading-none hover:underline text-indigo-600 dark:text-indigo-400 duration-300"
-            href={data.ProjectHeader.githubLink}
-            target="_blank"
-          >
-            github repository
-          </a>
-        </div>
+
+        {!data.ProjectHeader.projectLink ||
+        data.ProjectHeader.projectLink.trim() === "" ? null : (
+          <div className="flex items-center mr-10 mt-4 sm:mt-0">
+            <FiLink className="text-lg text-indigo-600 dark:text-indigo-400" />
+            <a
+              className="font-general-regular ml-2 leading-none hover:underline text-indigo-600 dark:text-indigo-400 duration-300"
+              href={data.ProjectHeader.projectLink}
+              target="_blank"
+            >
+              project link
+            </a>
+          </div>
+        )}
+        {!data.ProjectHeader.githubLink ||
+        data.ProjectHeader.githubLink.trim() === "" ? null : (
+          <div className="flex items-center mt-4 sm:mt-0">
+            <FiGithub className="text-lg text-indigo-600 dark:text-indigo-400" />
+            <a
+              className="font-general-regular ml-2 leading-none hover:underline text-indigo-600 dark:text-indigo-400 duration-300"
+              href={data.ProjectHeader.githubLink}
+              target="_blank"
+            >
+              github repository
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );

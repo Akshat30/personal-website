@@ -97,14 +97,14 @@ const ProjectsGrid = () => {
         </div>
       </div> */}
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
-        {projectsData.map((project) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-8">
+        {projectsData.map((project, index) => (
           <ProjectSingle
             name={project.Name}
             title={project.Title}
             category={project.ProjectSingle.desc}
             image={project.ProjectSingle.src}
-            key={project.id}
+            key={index}
             techs={project.ProjectInfo.Technologies.techs}
           ></ProjectSingle>
         ))}

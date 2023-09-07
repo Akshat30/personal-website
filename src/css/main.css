@@ -253,7 +253,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 }
 
 .center-item {
-      display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -849,6 +849,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-psingle {
+  --tw-bg-opacity: 1;
+  background-color: #e5f0fb;
+}
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -892,6 +896,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .p-6 {
   padding: 1.5rem;
+}
+.p-1 {
+  padding: 0.25rem;
 }
 .p-2 {
   padding: 0.5rem;
@@ -953,8 +960,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.pb-4 {
+.picon {
   padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 0.65rem;
 }
 .pt-10 {
   padding-top: 2.5rem;
@@ -1081,7 +1091,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .cover-img {
   width: 100%;
-  height: 10rem;
+  height: 12rem;
   object-fit: cover;
 }
 .shadow-sm {
@@ -1129,6 +1139,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .duration-100 {
   transition-duration: 100ms;
+}
+.hover\:scale:hover {
+  scale: 1.015;
+  transition-duration: 300ms;
 }
 .hover\:bg-indigo-600:hover {
   --tw-bg-opacity: 1;
@@ -1543,7 +1557,7 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
-    .sm\:px-12 {
+  .sm\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
   }

@@ -66,7 +66,7 @@ const AppHeader = () => {
           <div
             onClick={() => setTheme(activeTheme)}
             aria-label="Theme Switcher"
-            className="block sm:hidden ml-0 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
+            className="block sm:hidden ml-0 bg-primary-light dark:bg-ternary-dark picon shadow-sm rounded-xl cursor-pointer"
           >
             {activeTheme === "dark" ? (
               <FiMoon className="text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light text-xl" />
@@ -223,7 +223,7 @@ const AppHeader = () => {
           <div
             onClick={() => setTheme(activeTheme)}
             aria-label="Theme Switcher"
-            className="ml-8 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
+            className="ml-8 bg-primary-light dark:bg-ternary-dark picon shadow-sm rounded-xl cursor-pointer"
           >
             {activeTheme === "dark" ? (
               <FiMoon className="text-ternary-dark hover:text-indigo-600 dark:text-ternary-light dark:hover:text-indigo-400 text-xl" />
