@@ -44,8 +44,18 @@ const Education = () => {
             <div className="font-general-medium text-left text-md sm:text-lg text-ternary-dark dark:text-ternary-light ml-8 mb-2">
               class of 2025
             </div>
-            <div className="font-general-italic text-left text-md sm:text-lg text-ternary-dark dark:text-ternary-light ml-8 mb-10">
+            <div className="font-general-italic text-left text-md sm:text-lg text-ternary-dark dark:text-ternary-light ml-8 mb-6">
               b.s. computer science
+            </div>
+            <div className="flex flex-wrap text-sm gap-2 ml-8 mb-6  mr-8">
+              {courses.map((course, index) => (
+                <div
+                  className="lowercase flex-wrap text-center light-tech-container dark:dark-tech-container"
+                  key={index}
+                >
+                  {course}
+                </div>
+              ))}
             </div>
             {/* <div className="font-general-regular  text-left text-md text-ternary-dark dark:text-ternary-light mt-4 ml-8">
               relevant courses:
