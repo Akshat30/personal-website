@@ -7,6 +7,9 @@ import AppHeader from "./components/shared/AppHeader";
 import "./css/App.css";
 import UseScrollToTop from "./hooks/useScrollToTop";
 import { useEffect, useState } from "react";
+import { inject } from "@vercel/analytics";
+
+inject();
 
 const About = lazy(() => import("./pages/AboutMe"));
 const Contact = lazy(() => import("./pages/Contact.jsx"));
