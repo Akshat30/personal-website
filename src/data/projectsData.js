@@ -5,13 +5,54 @@ import netflixImg from "../images/covers/netflix.jpg";
 import carromImg from "../images/covers/carrom.jpg";
 import bay4jImg from "../images/covers/bay4j.png";
 import tiktokImg from "../images/covers/tiktok.jpg";
-import websiteImg from "../images/covers/website.jpg"
+import websiteImg from "../images/covers/website.jpg";
 import websiteIcon from "../images/covers/website.png";
-import slackpluginIcon from "../images/covers/slackplugintest.png"
-import tronImg from "../images/covers/tron.jpeg"
+import slackpluginIcon from "../images/covers/slackplugintest.png";
+import tronImg from "../images/covers/tron.jpeg";
 import prolexImg from "../images/covers/prolex.jpg";
+import spotifyplayground from "../images/covers/spotifyplayground.png"
 
 export const projectsData = [
+  {
+    Name: "spotifyplayground",
+    Title: "front end for spotify api",
+    ProjectSingle: {
+      src: spotifyplayground,
+      desc: "nextjs website that allows a user to sign in and view cool data about their spotify listening",
+    },
+    ProjectHeader: {
+      publishDate: "august 2023 - present",
+      projectLink: "https://ajspotify.vercel.app",
+      githubLink: "https://github.com/Akshat30/spotify-api",
+    },
+    CoverImage: {
+      title: "spotifyplayground",
+      creditLink: "",
+      src: spotifyplayground,
+    },
+    ProjectInfo: {
+      Description:
+        "A NextJS website that uses React and Tailwind CSS to allow users to sign in and view data about their Spotify listening. Also displays currently playing songs, and has a recommendation page as well.",
+      Context:
+        "Developed as a fun project to learn NextAuth, NextJS, TypeScript, and Spotify API.",
+      Technologies: {
+        techs: [
+          "nextjs",
+          "nextauth",
+          "ts",
+          "spotify",
+          "react",
+          "tailwindcss",
+          "html",
+        ],
+      },
+      Work: [
+        "Designed a front end website using NextJS, using a minimalist color palette and display spotify playing information",
+        "Used NextAuth to allow a given user to sign into website, allowing usage of an accessing token",
+        "Created Next API Routes to allow easy API calls to Spotify endpoints, to get data",
+      ],
+    },
+  },
   {
     Name: "slackplugin",
     Title: "slack plugin for chatgpt",
@@ -291,7 +332,14 @@ export const projectsData = [
         "bay4j is a youth organization promoting justice for important social issues, and this website helped them form an online presence",
       Context: "Designed and developed as a website for Bay4j",
       Technologies: {
-        techs: ["javascript", "canva", "gh pages", "html", "css", "github pages"],
+        techs: [
+          "javascript",
+          "canva",
+          "gh pages",
+          "html",
+          "css",
+          "github pages",
+        ],
         additional: [],
       },
       Work: [
