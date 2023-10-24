@@ -1,10 +1,8 @@
 import { FiArrowDownCircle } from "react-icons/fi";
-import ucsd from "../../images/ucsd.png";
 import geisel from "../../images/geisel.jpeg";
 import ggb from "../../images/goldengatebridge.jpg";
 import { motion } from "framer-motion";
-import glean from "../../images/glean.jpeg";
-import Typewriter from "typewriter-effect";
+import caidaRec from "../../images/caida-rectangle.png";
 import InfoCard from "../reusable/InfoCard";
 
 const AppBanner = () => {
@@ -27,7 +25,7 @@ const AppBanner = () => {
           }}
           className="font-general-bold mt-2 text-3xl sm:text-5xl text-center sm:text-center text-ternary-dark dark:text-primary-light"
         >
-          hello world, i'm aj!
+          hello, i'm aj!
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
@@ -81,11 +79,11 @@ const AppBanner = () => {
               title={""}
               body={
                 <div>
-                  <div className="font-general-bold">swe intern</div>
-                  <div className="mt-2 text-sm">glean</div>
+                  <div className="font-general-bold">front end dev</div>
+                  <div className="mt-2 text-sm">center for applied internet data analysis</div>
                 </div>
               }
-              image={glean}
+              image={caidaRec}
               link={"/"}
             />
           </div>

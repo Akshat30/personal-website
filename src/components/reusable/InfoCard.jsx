@@ -13,7 +13,7 @@ const InfoCard = ({ title, body, image, link}) => {
       }}
     >
       <Link to={link} aria-label="Information">
-        <div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-light-gray dark:bg-ternary-dark">
+        <div className="rounded-xl shadow-lg hover:shadow-xl cursor-default mb-10 sm:mb-0 bg-light-gray dark:bg-ternary-dark">
           <div className="text-center px-4 py-6">
             <p className="font-josefin-semibold text-lg sm:text-3xl text-ternary-dark dark:text-ternary-light mb-2">
               {title}
@@ -22,10 +22,10 @@ const InfoCard = ({ title, body, image, link}) => {
               {body}
             </span>
           </div>
-          <div>
+          <div className="info-image-container">
             <img 
               src={image}
-              className="rounded-b-xl border-none"
+              className="rounded-b-xl border-none info-image"
               alt="Information"
             />
           </div>

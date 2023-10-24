@@ -2,10 +2,23 @@
 import glean from "../images/gleansquare.jpeg";
 import soflo from "../images/soflo.png";
 import scio from "../images/SCIO.png";
+import caida from "../images/caida.png";
 
 export const workData = [
   {
     id: 1,
+    Title: "front end developer",
+    Logo: caida,
+    Time: "oct 23 - present",
+    Description: [
+      "Working as a Research Experience for Undergraduates (REU) intern",
+      "Using React to develop and maintain front end for large scale data catalog",
+      "Following best practices for GitHub Issues, Pull Requests, Approvals, Double Branch Protection",
+    ],
+    Technologies: ["react", "javascript", "githsub project", "scss"],
+  },
+  {
+    id: 2,
     Title: "software engineer intern",
     Logo: glean,
     Time: "jul 23 - present",
@@ -17,7 +30,7 @@ export const workData = [
     Technologies: ["python", "javascript", "yaml", "openai api", "slack api"],
   },
   {
-    id: 2,
+    id: 3,
     Title: "administrative intern",
     Logo: soflo,
     Time: "nov 20 - feb 21",
@@ -29,7 +42,7 @@ export const workData = [
     Technologies: ["java", "wordpress", "airtable", "excel", "web design"],
   },
   {
-    id: 3,
+    id: 4,
     Title: "software engineer intern",
     Logo: scio,
     Time: "jun 19 - jul 19",

@@ -690,6 +690,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-5 {
   height: 1.25rem;
 }
+.info-image-container {
+  overflow: hidden; /* Hide the overflowing parts of the image */
+  position: relative; /* To make sure the image stays within the container */
+}
+.info-image {
+  width: 100%; /* Make sure the image width fills the container */
+  height: 100%; /* Make sure the image height fills the container */
+  object-fit: cover; /* Crop the image to cover the container */
+}
 .h-7 {
   height: 1.75rem;
 }
